@@ -15,6 +15,8 @@ class CreateEventosTable extends Migration
     {
         Schema::create('eventos', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('desfile');
+            $table->bigInteger('agremiação');
             $table->timestamps();
         });
     }

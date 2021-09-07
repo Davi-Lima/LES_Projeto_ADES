@@ -15,6 +15,9 @@ class CreateAgremiacaosTable extends Migration
     {
         Schema::create('agremiacaos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 160);
+            $table->date('fundacao');
+            $table->text('descricao');
             $table->timestamps();
         });
     }

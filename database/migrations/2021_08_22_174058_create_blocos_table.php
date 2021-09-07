@@ -15,6 +15,8 @@ class CreateBlocosTable extends Migration
     {
         Schema::create('blocos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->text('descricao');
             $table->timestamps();
         });
     }
