@@ -23,7 +23,7 @@
         <div class="inner">
           <h3 class="masthead-brand">Winchester Technologies</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="/contato">Contato</a>
             <a class="nav-link" href="#">Login</a>
           </nav>
         </div>

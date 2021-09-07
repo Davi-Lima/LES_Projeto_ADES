@@ -24,3 +24,7 @@ Route::get('/inicio', function () {
 Route::get('/apuracao', function () {
     return view('apuracao');
 });
+
+Route::get('/contato', function () {
+    return view('fixos.contato');
+});

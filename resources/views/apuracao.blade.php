@@ -1,249 +1,93 @@
+@extends('fixos.master')
+@section('titulo','WinTech - Apuração')
+@section('principal','nav-link')
+@section('apuracao','nav-link active')
+@section('contato','nav-link')
+@section('conteudo')
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Apuração</h1>
+</div>
+<!-- Grafico
+<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+-->
+<h2>Classificação Final</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">POSIÇÃO</th>
+                <th scope="col">AGREMIAÇÃO</th>
+                <th scope="col">PONTUAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Águia de Ouro</td>
+                <td>269,9</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mancha Verde</td>
+              <td>269,8</td>
+            </tr>
+<tr>
+  <td>3</td>
+  <td>Mocidade Alegre</td>
+  <td>269,7</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Acadêmicos do Tatuapé</td>
+  <td>269,7</td>
+</tr>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+5
+Unidos de Vila Maria
+269,5
 
-    <title>WinTech - A.D.E.S.</title>
+6
+Dragões da Real
+269,5
 
-    <!-- Principal CSS do Bootstrap -->
-    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+7
+Rosas de Ouro
+269,5
 
-    <!-- Estilos customizados para esse template -->
-    <link href="https://getbootstrap.com.br/docs/4.1/examples/dashboard/dashboard.css" rel="stylesheet">
-  </head>
+8
+Tom Maior
+269,3
 
-  <body>
-    <!-- CONTEUDO DA BARRA SUPERIOR -->
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Titulo provisorio</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sair</a>
-        </li>
-      </ul>
-    </nav>
+9
+Império de Casa Verde
+269,2
 
-    
-    <div class="container-fluid">
-      <div class="row">
-        <!-- INICIO DO MENU LATERAL -->
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="/inicio">
-                  <span data-feather="home"></span>
-                  Principal 
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Pedidos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Produtos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Clientes
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/apuracao">
-                  <span data-feather="bar-chart-2"></span>
-                  Apuração <span class="sr-only">(atual)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrações
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- FIM DO MENU LATERAL -->
+10
+Barroca Zona Sul
+269
 
-        <!-- INICIO DE CONTEUDO -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Apuração do Desfiles - 2019</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">Compartilhar</button>
-                <button class="btn btn-sm btn-outline-secondary">Exportar</button>
-              </div>
-              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar"></span>
-                Esta semana
-              </button>
-            </div>
-          </div>
+11
+Gaviões da Fiel
+268,9
 
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+12
+Colorado do Brás
+268,7
 
-          <h2>Título da seção</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Cabeçalho</th>
-                  <th>Cabeçalho</th>
-                  <th>Cabeçalho</th>
-                  <th>Cabeçalho</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
-        <!-- FIM CONTEUDO PRINCIPAL -->
+13
+X-9 Paulistana
+268,4
 
-      </div>
-    </div>
+14
+Pérola Negra
+267,6
 
-    <!-- Principal JavaScript do Bootstrap
-    ================================================== 
-     Foi colocado no final para a página carregar mais rápido -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+</tbody>
+    </table>
+</div>
 
-    <!-- Ícones -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
-
-    <!-- Gráficos -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<!-- Gráficos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
@@ -273,5 +117,4 @@
         }
       });
     </script>
-  </body>
-</html>
+@endsection
