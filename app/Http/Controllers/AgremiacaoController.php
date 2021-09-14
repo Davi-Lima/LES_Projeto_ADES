@@ -14,7 +14,10 @@ class AgremiacaoController extends Controller
      */
     public function index()
     {
-        //
+        
+        $listagem = Agremiacao::all();
+        return view('admin.agremiacao.listar')->with('NomeVarView',$listagem);
+
     }
 
     /**

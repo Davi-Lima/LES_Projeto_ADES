@@ -15,8 +15,8 @@
     <body>
         <!-- Cabeçalho da página -->
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Projeto A.D.E.S.</a>
-            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Winchester Technologies</a>
+            
             <ul class="navbar-nav px-3">
                 @if(auth()->check())
                     <li class="nav-item text-nowrap">
@@ -50,6 +50,11 @@
                             <li class="nav-item">
                                 <a class="@yield('contato')" href="/contato">
                                     <span data-feather="mail"></span> Contato
+                                </a>
+                            </li>            
+                            <li class="nav-item">
+                                <a class="@yield('agremiacao')" href="/admin/agremiacao">
+                                    <span data-feather="file-text"></span> Agremiações
                                 </a>
                             </li>
                         </ul>
